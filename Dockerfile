@@ -1,6 +1,10 @@
 FROM ubuntu:16.04
 
+ADD . /app
+
 ADD l_openvino_toolkit* /openvino/
+
+WORKDIR /app
 
 ARG INSTALL_DIR=/opt/intel/openvino
 
